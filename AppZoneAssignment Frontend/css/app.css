@@ -1,0 +1,76 @@
+body, #mainWrapper {
+	height: 70%;
+	background-color:rgb(245, 245, 245);
+}
+
+body, .form-control{
+	font-size:13px!important;
+}
+
+.floatRight{
+	float:right;
+	margin-right: 18px;
+}
+
+.has-error{
+	color:red;
+}
+
+.formcontainer{
+	background-color: #DAE8E8;
+	padding: 20px;
+}
+
+.tablecontainer{
+	padding-left: 20px;
+}
+
+.generic-container {
+	width:85%;
+	margin:0 auto;
+	padding: 20px;
+	background-color: #EAE7E7;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	box-shadow: 0 0 30px black;
+}
+
+.custom-width {
+	width: 80px !important;
+} 
+
+.req_skill_container{
+	height:140px;border-style: solid;border-width: 1px; border-color:#f9f6f6; background-color:#f9f6f6; padding:10px;
+}
+.req_skill_element{
+	margin-bottom: 50px;
+	display: inline; 
+	padding:5px; 
+	font-size:16px;
+	border-style:solid;
+	border-width: 1px; 
+	border-color:#337ab7; 
+	color: #fff; 
+	background-color:#337ab7; 
+	margin-right:15px;
+}
+
+.HeadLabel{
+    font-weight: bold;
+    font-size: medium;
+}
+
+.defLabel{
+    font-size: small;
+}
+
+.modal-content{
+    font-size: large;
+    width:130%;
+    margin-left:-50px;
+}
+
+.fileCss {
+    background-color: whitesmoke;
+    width:80%;
+}

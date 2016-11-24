@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/app.css"> 
+</head>
+<body ng-app="myApp">
+    <br><br><br><br><br><br>
+    <div  ng-controller="UserController as ctrl">
+
+        <div id="login-overlay" class="modal-dialog">
+            <div class="modal-content" style="width:150%;margin-left:-150px;">
+                <div class="modal-header">
+                    <a style="float:right;" href="./moderator.html" class="btn btn-success">Enter as moderator</a>
+                    <h4 class="modal-title" id="myModalLabel">Login Form</h4>
+                </div>
+                <div class="modal-body">
+                    <form name="form" ng-submit="ctrl.login()">
+                        <div class="form-group">
+                            <label for="username" class="control-label">Username</label>
+                            <input type="text" class="form-control" name="username" title="Please enter your username" placeholder="username" ng-model="ctrl.user.username">
+                            <span class="help-block"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="control-label">Password</label>
+                            <input type="password" class="form-control" name="password" placeholder="password" title="Please enter your password" ng-model="ctrl.user.password">
+                            <span class="help-block"></span>
+                        </div>
+                        <div  ng-if="!loignStatus" class="alert alert-danger">Wrong username or password!</div>
+                        <input type="submit" value="login" class="btn btn-primary">
+                    </form>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-animate.js"></script>
+    <script src="js/ui-bootstrap-tpls-0.14.3.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/service/user_service.js"></script>
+    <script src="js/controller/user_controller.js"></script>
+
+</body>
+</html>
